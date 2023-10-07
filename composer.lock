@@ -10112,16 +10112,16 @@
         },
         {
             "name": "symfony/templating",
-            "version": "v6.2.7",
+            "version": "v6.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/templating.git",
-                "reference": "25662be9cec98a2486487eca230a081ffa1a7832"
+                "reference": "27d79475d8bcba894235b5472df158e78c6419a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/templating/zipball/25662be9cec98a2486487eca230a081ffa1a7832",
-                "reference": "25662be9cec98a2486487eca230a081ffa1a7832",
+                "url": "https://api.github.com/repos/symfony/templating/zipball/27d79475d8bcba894235b5472df158e78c6419a3",
+                "reference": "27d79475d8bcba894235b5472df158e78c6419a3",
                 "shasum": ""
             },
             "require": {
@@ -10130,9 +10130,6 @@
             },
             "require-dev": {
                 "psr/log": "^1|^2|^3"
-            },
-            "suggest": {
-                "psr/log-implementation": "For using debug logging in loaders"
             },
             "type": "library",
             "autoload": {
@@ -10160,7 +10157,7 @@
             "description": "Provides all the tools needed to build any kind of template system",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/templating/tree/v6.2.7"
+                "source": "https://github.com/symfony/templating/tree/v6.3.0"
             },
             "funding": [
                 {
@@ -10176,7 +10173,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-14T08:44:56+00:00"
+            "time": "2023-04-22T08:23:52+00:00"
         },
         {
             "name": "symfony/translation",
@@ -17577,5 +17574,5 @@
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
