@@ -5,6 +5,7 @@ namespace App\Repository\Shop\Product;
 use App\Entity\Shop\Product\Brand;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Sylius\Bundle\ResourceBundle\Doctrine\ORM\EntityRepository;
 
 /**
  * @extends ServiceEntityRepository<Brand>
@@ -14,35 +15,6 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method Brand[]    findAll()
  * @method Brand[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class BrandRepository extends ServiceEntityRepository
+class BrandRepository extends EntityRepository
 {
-    public function __construct(ManagerRegistry $registry)
-    {
-        parent::__construct($registry, Brand::class);
-    }
-
-//    /**
-//     * @return Brand[] Returns an array of Brand objects
-//     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('b')
-//            ->andWhere('b.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('b.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
-
-//    public function findOneBySomeField($value): ?Brand
-//    {
-//        return $this->createQueryBuilder('b')
-//            ->andWhere('b.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
-//    }
 }

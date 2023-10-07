@@ -1,0 +1,14 @@
+app_backend_product_brand:
+    resource: |
+        alias: app.product.brand
+        section: backend
+        except: ['show']
+        redirect: update
+        grid: app_backend_product_brand
+        vars:
+            all:
+                subheader: app.ui.manage_articles
+            index:
+                icon: newspaper
+        templates: backend/crud
+    type: sylius.resource

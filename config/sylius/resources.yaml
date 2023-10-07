@@ -1,5 +1,17 @@
 sylius_resource:
     resources:
-#        app.topic:
-#            classes:
-#                model: App\Entity\Topic\Topic
+       app.product.category:
+           classes:
+               model: App\Entity\Shop\Product\Category
+       app.product.attribute:
+           classes:
+               model: App\Entity\Shop\Product\Attribute
+       app.product.attribute_value:
+           classes:
+               model: App\Entity\Shop\Product\AttributeValue
+       app.product.brand:
+           classes:
+               model: App\Entity\Shop\Product\Brand
+       app.product.product:
+           classes:
+               model: App\Entity\Shop\Product\Product

@@ -12,7 +12,7 @@ trait ToggleableTrait
 
     public function isEnabled(): bool
     {
-        return $this->enabled;
+        return $this->isEnabled;
     }
 
     /**
@@ -26,14 +26,14 @@ trait ToggleableTrait
 
     public function enable(): self
     {
-        $this->enabled = true;
+        $this->isEnabled = true;
         return $this;
 
     }
 
     public function disable():self
     {
-        $this->enabled = false;
+        $this->isEnabled = false;
         return $this;
 
     }

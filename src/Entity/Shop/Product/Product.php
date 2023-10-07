@@ -13,10 +13,11 @@ use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
+use Sylius\Component\Resource\Model\ResourceInterface;
 
 #[ORM\Entity(repositoryClass: ProductRepository::class)]
 #[ORM\Table(name: 'shop_product')]
-class Product
+class Product implements ResourceInterface
 {
     use IdentifiableTrait;
     use HasMetaTagsTrait;
@@ -61,7 +62,7 @@ class Product
     private ?float $costAmount = null;
 
     #[ORM\Column(type: ProductType::NAME, length: 255, nullable: true)]
-    private $type = ProductTypeEnum::DELIVERABLE;
+    private $type = ProductTypeEnum::DELIVERABLE->value;
 
     #[ORM\Column(nullable: true)]
     private ?\DateTimeImmutable $publishedAt = null;

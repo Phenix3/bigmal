@@ -16,3 +16,18 @@ sylius_backend_customer:
 
 sylius_backend_security:
     resource: "security.yaml"
+
+app_backend_product_category:
+    resource: "shop_product_category.yaml"
+
+app_backend_product_attribute:
+    resource: "shop_product_attribute.yaml"
+
+app_backend_product_attribute_value:
+    resource: "shop_product_attribute_value.yaml"
+
+app_backend_product_brand:
+    resource: "shop_product_brand.yaml"
+
+app_backend_product_product:
+    resource: "shop_product_product.yaml"
