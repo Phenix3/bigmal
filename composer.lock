@@ -6231,6 +6231,79 @@
             "time": "2023-05-23T14:45:45+00:00"
         },
         {
+            "name": "symfony/clock",
+            "version": "v6.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/clock.git",
+                "reference": "a74086d3db70d0f06ffd84480daa556248706e98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/clock/zipball/a74086d3db70d0f06ffd84480daa556248706e98",
+                "reference": "a74086d3db70d0f06ffd84480daa556248706e98",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "psr/clock": "^1.0"
+            },
+            "provide": {
+                "psr/clock-implementation": "1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Resources/now.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\Clock\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Decouples applications from the system clock",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "clock",
+                "psr20",
+                "time"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/clock/tree/v6.3.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-07-31T11:35:03+00:00"
+        },
+        {
             "name": "symfony/config",
             "version": "v6.2.13",
             "source": {
@@ -7754,25 +7827,26 @@
         },
         {
             "name": "symfony/messenger",
-            "version": "v6.2.13",
+            "version": "v6.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/messenger.git",
-                "reference": "a52bd752edbf25521a53657a181db9c0cabd31fc"
+                "reference": "bf460982736a4b99d11a3a90005ef438c3780df7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/messenger/zipball/a52bd752edbf25521a53657a181db9c0cabd31fc",
-                "reference": "a52bd752edbf25521a53657a181db9c0cabd31fc",
+                "url": "https://api.github.com/repos/symfony/messenger/zipball/bf460982736a4b99d11a3a90005ef438c3780df7",
+                "reference": "bf460982736a4b99d11a3a90005ef438c3780df7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
-                "psr/log": "^1|^2|^3"
+                "psr/log": "^1|^2|^3",
+                "symfony/clock": "^6.3"
             },
             "conflict": {
                 "symfony/event-dispatcher": "<5.4",
-                "symfony/event-dispatcher-contracts": "<2",
+                "symfony/event-dispatcher-contracts": "<2.5",
                 "symfony/framework-bundle": "<5.4",
                 "symfony/http-kernel": "<5.4",
                 "symfony/serializer": "<5.4"
@@ -7781,6 +7855,7 @@
                 "psr/cache": "^1.0|^2.0|^3.0",
                 "symfony/console": "^5.4|^6.0",
                 "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/event-dispatcher": "^5.4|^6.0",
                 "symfony/http-kernel": "^5.4|^6.0",
                 "symfony/process": "^5.4|^6.0",
@@ -7788,12 +7863,9 @@
                 "symfony/rate-limiter": "^5.4|^6.0",
                 "symfony/routing": "^5.4|^6.0",
                 "symfony/serializer": "^5.4|^6.0",
-                "symfony/service-contracts": "^1.1|^2|^3",
+                "symfony/service-contracts": "^2.5|^3",
                 "symfony/stopwatch": "^5.4|^6.0",
                 "symfony/validator": "^5.4|^6.0"
-            },
-            "suggest": {
-                "enqueue/messenger-adapter": "For using the php-enqueue library as a transport."
             },
             "type": "library",
             "autoload": {
@@ -7821,7 +7893,7 @@
             "description": "Helps applications send and receive messages to/from other applications or via message queues",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/messenger/tree/v6.2.13"
+                "source": "https://github.com/symfony/messenger/tree/v6.3.4"
             },
             "funding": [
                 {
@@ -7837,7 +7909,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-05T08:41:15+00:00"
+            "time": "2023-08-14T14:06:04+00:00"
         },
         {
             "name": "symfony/mime",
@@ -17577,5 +17649,5 @@
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
